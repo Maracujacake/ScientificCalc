@@ -23,5 +23,13 @@ public class escolha{
                 System.out.println("Operação inexistente, tente novamente");
         }
     }
+
+    public static void operacoesBasicas(){
+
+    }
+
+    public static void operacoesTrigonometricas(){
+        
+    }
     
 }
