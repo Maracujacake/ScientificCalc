@@ -4,27 +4,31 @@ import java.lang.Math;
 public class Main{
     public static void main(String[] args){
 
-        int menuChoice = menu();
+        System.out.println("Bem-vindo a calculadora cientifica em java, as operações disponíveis no momento são:");
+        int choiceFinish = 0;
 
-        if(menuChoice == 1){ // operacoes basicas
-            int Choose = leitura.leituraInt();
-            System.out.println("primeiro numero:");
-            double a = leitura.leituraDouble();
-            double b = 0;
-            if(Choose != 6){
-                System.out.println("segundo numero:");
-                b = leitura.leituraDouble();
+        while(choiceFinish == 0){
+            int menuChoice = menu();
+            int Choose = 0;
+
+            if(menuChoice == 1){ // operacoes basicas
+                Choose = leitura.leituraInt();
+                escolha.escolhaOpBasica(Choose);
             }
-            escolha.escolhaOp(Choose, a, b);
-        }
 
-        else if(menuChoice == 2){ // operacoes trigonometricas
-            System.out.println("Work in progress, programa encerrado");
-        }
+            else if(menuChoice == 2){ // operacoes trigonometricas
+                Choose = leitura.leituraInt();
+                escolha.operacoesTrigonometricas(Choose);
+            }
+
+            System.out.println("Deseja realizar outra operação? 0 - Sim   1 - Não");
+            choiceFinish = leitura.leituraInt();
+        } 
     }
+
+
     // menu inicial
     public static int menu(){
-        System.out.println("Bem-vindo a calculadora cientifica em java, as operações disponíveis no momento são:");
         menu.menuTipoOp();
         int escolhaOperacao = leitura.leituraInt();
         menu.operacaoEscolhida(escolhaOperacao);
