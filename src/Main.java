@@ -7,18 +7,21 @@ public class Main{
         System.out.println("Bem-vindo a calculadora cientifica em java, as operações disponíveis no momento são:");
         int choiceFinish = 0;
 
-        while(choiceFinish == 0){
-            int menuChoice = menu();
-            int Choose = 0;
-
-            if(menuChoice == 1){ // operacoes basicas
-                Choose = leitura.leituraInt();
-                escolha.escolhaOpBasica(Choose);
-            }
-
-            else if(menuChoice == 2){ // operacoes trigonometricas
-                Choose = leitura.leituraInt();
-                escolha.operacoesTrigonometricas(Choose);
+        while(choiceFinish == 0){ // loop de operações caso o usuário deseje
+            int menuChoice = menu(); // escolhe qual grupo de operações
+            int Choose = 0;// escolha de qual operação
+            switch(menuChoice){
+                case 1: // operações básicas
+                    Choose = leitura.leituraInt();
+                    escolha.escolhaOpBasica(Choose);
+                break;
+                case 2: // operações trigonométricas
+                    Choose = leitura.leituraInt();
+                    escolha.operacoesTrigonometricas(Choose);
+                break;
+                case 3: // operações logarítmicas
+                    Choose = leitura.leituraInt();
+                    escolha.operacoesLog(Choose);
             }
 
             System.out.println("Deseja realizar outra operação? 0 - Sim   1 - Não");

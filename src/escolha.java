@@ -48,5 +48,23 @@ public class escolha{
                 System.out.println("Operacão inexistente, tente novamente");
         }
     }
-    
+
+    public static void operacoesLog(int Choose){
+        switch(Choose){
+            case 1:
+                System.out.println(operacoesLog.logNatural());
+            break;
+            case 2:
+                System.out.println(operacoesLog.logBase10());
+            break;
+            case 3:
+                System.out.println(operacoesLog.logBase2());
+            break;
+            case 4:
+                System.out.println(operacoesLog.logQualquerBase());
+            break;
+            default:
+                System.out.println("Operacão inexistente, tente novamente");
+        }
+    }
 }
