@@ -1,3 +1,4 @@
+
 public class escolha{
     public static void escolhaOpBasica(int Choose){
         switch(Choose){
@@ -65,6 +66,14 @@ public class escolha{
             break;
             default:
                 System.out.println("Operacão inexistente, tente novamente");
+        }
+    }
+
+    public static void operacoesComplexo(int Choose){
+        switch(Choose){
+            case 1:
+                System.out.println(operacoesComplexos.somaComplexos(operacoesComplexos.leComplexo(), operacoesComplexos.leComplexo()));
+            break;
         }
     }
 }

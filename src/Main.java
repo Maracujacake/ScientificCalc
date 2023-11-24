@@ -22,6 +22,13 @@ public class Main{
                 case 3: // operações logarítmicas
                     Choose = leitura.leituraInt();
                     escolha.operacoesLog(Choose);
+                break;
+                case 4:
+                    Choose = leitura.leituraInt();
+                    escolha.operacoesComplexo(Choose);
+                break;
+                default:
+                    System.out.println("Operação não existente");
             }
 
             System.out.println("Deseja realizar outra operação? 0 - Sim   1 - Não");
