@@ -16,7 +16,7 @@ public class menu{
                 System.out.println("1 - Logaritmo natural\n2 - Logaritmo na base 10\n3 - Logaritmo na base 2\n4 - Logaritmo na base que escolher");
             break;
             case 4:
-                System.out.println("1 - Soma com números complexos\n");
+                System.out.println("1 - Soma com números complexos\n2 - Subtração com números complexos\n");
             break;
             default:
                 System.out.println("Tipo de operação inválida, tente novamente");

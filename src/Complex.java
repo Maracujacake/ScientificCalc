@@ -19,5 +19,9 @@ public class Complex {
         return new Complex(a.real + b.real, a.imag + b.imag);
     }
 
+    public static Complex subtract(Complex a, Complex b) {
+        return new Complex(a.real - b.real, a.imag - b.imag);
+    }
+
     // Implemente outros métodos conforme necessário, como subtract, multiply, divide, etc.
 }

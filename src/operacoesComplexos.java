@@ -9,8 +9,14 @@ public class operacoesComplexos{
         return ab;
     }
 
-    public static Complex somaComplexos(Complex a, Complex b){
-        return Complex.add(a, b);
+    public static void somaComplexos(Complex a, Complex b){
+        Complex resultadoSoma = Complex.add(a, b);
+        System.out.println(resultadoSoma.getReal() + " + i " + resultadoSoma.getImag());
+    }
+
+    public static void subtracaoComplexos(Complex a, Complex b){
+        Complex resultadoSoma = Complex.subtract(a, b);
+        System.out.println(resultadoSoma.getReal() + " + i " + resultadoSoma.getImag());
     }
 
 }

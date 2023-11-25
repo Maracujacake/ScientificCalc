@@ -72,8 +72,12 @@ public class escolha{
     public static void operacoesComplexo(int Choose){
         switch(Choose){
             case 1:
-                System.out.println(operacoesComplexos.somaComplexos(operacoesComplexos.leComplexo(), operacoesComplexos.leComplexo()));
+                operacoesComplexos.somaComplexos(operacoesComplexos.leComplexo(), operacoesComplexos.leComplexo());
             break;
+            case 2:
+                operacoesComplexos.subtracaoComplexos(operacoesComplexos.leComplexo(), operacoesComplexos.leComplexo());
+            default:
+                System.out.println("Operação inexistente, tente novamente");
         }
     }
 }
