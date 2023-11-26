@@ -35,6 +35,10 @@ public class Main{
                     Choose = leitura.leituraInt();
                     escolha.operacoesTemperaturas(Choose);
                 break;
+                case 7: // transformações de bases decimais/binarias
+                    Choose = leitura.leituraInt();
+                    escolha.operacoesEstats(Choose);
+                break;
                 default:
                     System.out.println("Operação não existente");
             }

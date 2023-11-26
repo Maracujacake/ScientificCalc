@@ -138,4 +138,23 @@ public class escolha{
                 System.out.println("Operacão inexistente, tente novamente");
         }
     }
+
+    public static void operacoesEstats(int Choose){
+        switch(Choose){
+            case 1:
+                System.out.println(operacoesEstatisticas.calcularMedia(operacoesEstatisticas.leDados()));
+            break;
+            case 2:
+                System.out.println(operacoesEstatisticas.calcularMediana(operacoesEstatisticas.leDados()));
+            break;
+            case 3:
+                System.out.println(operacoesEstatisticas.calcularVariancia(operacoesEstatisticas.leDados()));
+            break;
+            case 4:
+                System.out.println(operacoesEstatisticas.calcularDesvioPadrao(operacoesEstatisticas.leDados()));
+            break;
+            default:
+                System.out.println("Operacão inexistente, tente novamente");
+        }
+    }
 }
