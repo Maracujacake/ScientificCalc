@@ -11,4 +11,9 @@ public class leitura{
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
+
+    public static String leituraString(){
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
+    }
 }

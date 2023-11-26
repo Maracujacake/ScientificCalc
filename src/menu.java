@@ -1,7 +1,7 @@
 public class menu{
 
     public static void menuTipoOp(){
-        System.out.println("1 - Operações básicas\n2 - Operações trigonométricas\n3 - Operações logarítmicas\n4 - Operações com números complexos\n");
+        System.out.println("1 - Operações básicas\n2 - Operações trigonométricas\n3 - Operações logarítmicas\n4 - Operações com números complexos\n5 - Conversão de bases\n6 - Conversão de temperaturas");
     }
 
     public static void operacaoEscolhida(int escolha){
@@ -17,6 +17,12 @@ public class menu{
             break;
             case 4:
                 System.out.println("1 - Soma com números complexos\n2 - Subtração com números complexos\n3 - Multiplicação com números complexos\n4 - Divisão com números complexos");
+            break;
+            case 5:
+                System.out.println("1 - Decimal para binário\n2 - Decimal para octal\n3 - Decimal para hexadecimal\n4 - Binario para decimal\n5 - Octal para decimal\n6 - Hexadecimal para decimal");
+            break;
+            case 6:
+                System.out.println("1 - Celsius para Fahrenheit\n2 - Celsius para Kelvin\n3 - Fahrenheit para Celsius\n4 - Fahrenheit para Kelvin\n5 - Kelvin para Fahrenheit\n6 - Kelvin para Celsius");
             break;
             default:
                 System.out.println("Tipo de operação inválida, tente novamente");

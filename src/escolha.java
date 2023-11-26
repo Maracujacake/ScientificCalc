@@ -87,4 +87,55 @@ public class escolha{
                 System.out.println("Operação inexistente, tente novamente");
         }
     }
+
+
+    public static void operacoesBases(int Choose){
+        switch(Choose){
+            case 1:
+                conversaoBases.decimalToBinario();
+            break;
+            case 2:
+                conversaoBases.decimalToOctal();
+            break;
+            case 3:
+                conversaoBases.decimalToHexadecimal();
+            break;
+            case 4:
+                conversaoBases.binaryToDecimal();
+            break;
+            case 5:
+                conversaoBases.octalToDecimal();
+            break;
+            case 6:
+                conversaoBases.hexadecimalToDecimal();
+            break;
+            default:
+                System.out.println("Operacão inexistente, tente novamente");
+        }
+    }
+
+    public static void operacoesTemperaturas(int Choose){
+        switch(Choose){
+            case 1:
+                conversaoTemperatura.celsiusToFahrenheit();
+            break;
+            case 2:
+                conversaoTemperatura.celsiusToKelvin();
+            break;
+            case 3:
+                conversaoTemperatura.fahrenheitToCelsius();
+            break;
+            case 4:
+                conversaoTemperatura.fahrenheitToKelvin();
+            break;
+            case 5:
+                conversaoTemperatura.kelvinToFahrenheit();
+            break;
+            case 6:
+                conversaoTemperatura.kelvinToCelsius();
+            break;
+            default:
+                System.out.println("Operacão inexistente, tente novamente");
+        }
+    }
 }

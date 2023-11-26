@@ -27,6 +27,14 @@ public class Main{
                     Choose = leitura.leituraInt();
                     escolha.operacoesComplexo(Choose);
                 break;
+                case 5: // transformações de bases decimais/binarias
+                    Choose = leitura.leituraInt();
+                    escolha.operacoesBases(Choose);
+                break;
+                case 6: // transformações de bases decimais/binarias
+                    Choose = leitura.leituraInt();
+                    escolha.operacoesTemperaturas(Choose);
+                break;
                 default:
                     System.out.println("Operação não existente");
             }
