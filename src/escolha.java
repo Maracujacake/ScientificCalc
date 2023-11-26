@@ -76,6 +76,10 @@ public class escolha{
             break;
             case 2:
                 operacoesComplexos.subtracaoComplexos(operacoesComplexos.leComplexo(), operacoesComplexos.leComplexo());
+            break;
+            case 3:
+                operacoesComplexos.multiComplexos(operacoesComplexos.leComplexo(), operacoesComplexos.leComplexo());
+            break;
             default:
                 System.out.println("Operação inexistente, tente novamente");
         }

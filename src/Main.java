@@ -23,7 +23,7 @@ public class Main{
                     Choose = leitura.leituraInt();
                     escolha.operacoesLog(Choose);
                 break;
-                case 4:
+                case 4: // operações com complexos (a + ib)
                     Choose = leitura.leituraInt();
                     escolha.operacoesComplexo(Choose);
                 break;
