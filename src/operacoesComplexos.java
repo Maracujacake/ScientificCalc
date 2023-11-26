@@ -21,8 +21,16 @@ public class operacoesComplexos{
         System.out.println(resultadoSoma.getReal() + " + i " + resultadoSoma.getImag());
     }
 
+
+    // Parte danificada do código, aparentemente não funciona e demonstra resultados erroneos
+    // ARRUMAR!!
     public static void multiComplexos(Complex a, Complex b){
         Complex resultado = Complex.multiplication(a, b);
+        System.out.println(resultado.getReal() + " + i " + resultado.getImag());
+    }
+
+    public static void divisaoComplexos(Complex a, Complex b){
+        Complex resultado = Complex.division(a, b);
         System.out.println(resultado.getReal() + " + i " + resultado.getImag());
     }
 }

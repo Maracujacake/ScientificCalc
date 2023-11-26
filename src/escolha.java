@@ -80,6 +80,9 @@ public class escolha{
             case 3:
                 operacoesComplexos.multiComplexos(operacoesComplexos.leComplexo(), operacoesComplexos.leComplexo());
             break;
+            case 4:
+                operacoesComplexos.divisaoComplexos(operacoesComplexos.leComplexo(), operacoesComplexos.leComplexo());
+            break;
             default:
                 System.out.println("Operação inexistente, tente novamente");
         }

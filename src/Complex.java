@@ -29,4 +29,19 @@ public class Complex {
         return new Complex(parteReal, parteImag);
     }
 
+    public static Complex division(Complex a, Complex b){
+         // Calcular o conjugado de b
+         double conjugadoParteImaginaria = -b.getImag();
+         Complex conjugadoB = new Complex(b.getReal(), conjugadoParteImaginaria);
+ 
+         // Calcular |b|^2
+         double moduloBQuadrado = b.getReal() * b.getReal() + b.getImag() * b.getImag();
+ 
+         // Calcular a / b
+         double parteReal = (a.getReal() * conjugadoB.getReal() - a.getImag() * conjugadoB.getImag()) / moduloBQuadrado;
+         double parteImaginaria = (a.getReal() * conjugadoB.getImag() + a.getImag() * conjugadoB.getReal()) / moduloBQuadrado;
+ 
+         return new Complex(parteReal, parteImaginaria);
+    }
+
 }
