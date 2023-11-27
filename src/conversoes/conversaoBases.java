@@ -1,3 +1,5 @@
+package conversoes;
+import leitura.leitura;
 public class conversaoBases{
 
     // necessario fazer testes

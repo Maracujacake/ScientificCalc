@@ -1,5 +1,7 @@
+package operacoes;
 import java.util.ArrayList;
 import java.util.Collections;
+import leitura.leitura;
 
 public class operacoesEstatisticas{
 

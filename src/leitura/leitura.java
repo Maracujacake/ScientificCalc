@@ -1,3 +1,4 @@
+package leitura;
 import java.util.Scanner;
 
 public class leitura{

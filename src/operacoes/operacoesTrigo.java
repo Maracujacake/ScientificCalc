@@ -1,3 +1,5 @@
+package operacoes;
+import leitura.leitura;
 public class operacoesTrigo{
 
     public static double seno(){

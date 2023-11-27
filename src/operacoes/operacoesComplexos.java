@@ -1,4 +1,8 @@
+package operacoes;
 import java.lang.Math;
+import leitura.leitura;
+import bibliotecas.Complex;
+
 
 public class operacoesComplexos{
 

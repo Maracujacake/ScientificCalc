@@ -1,3 +1,12 @@
+package escolhaOperacao;
+import operacoes.operacoesBasicas;
+import operacoes.operacoesComplexos;
+import operacoes.operacoesEstatisticas;
+import operacoes.operacoesLog;
+import operacoes.operacoesTrigo;
+import conversoes.conversaoTemperatura;
+import conversoes.conversaoBases;
+import leitura.leitura;
 
 public class escolha{
     public static void escolhaOpBasica(int Choose){

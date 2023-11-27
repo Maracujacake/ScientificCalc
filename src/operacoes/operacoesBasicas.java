@@ -1,4 +1,6 @@
+package operacoes;
 import java.lang.Math;
+import leitura.leitura;
 
 public class operacoesBasicas{
 
