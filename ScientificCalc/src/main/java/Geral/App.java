@@ -4,11 +4,22 @@ import java.lang.Math;
 import leitura.leitura;
 import escolhaOperacao.escolha;
 import menus.menu;
+import gui.calcGUI;
 
 public class App 
 {
+
+    
     public static void main(String[] args){
 
+        /* criação da instancia da GUI */
+        SwingUtilities.invokeLater(() -> {
+            calcGUI calculadoraGUI = new calcGUI();
+            // Adicione aqui qualquer lógica adicional necessária
+        });
+        
+        
+        /* codigo principal do terminal */
         System.out.println("Bem-vindo a calculadora cientifica em java, as operações disponíveis no momento são:");
         int choiceFinish = 0;
 

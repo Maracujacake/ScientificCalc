@@ -7,11 +7,12 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+
 public class calcGUI extends JFrame implements ActionListener{
     private JTextField textField;
     private JButton[] botoes;
 
-    public CalculadoraGUI() {
+    public calcGUI() {
         // Configurações básicas da janela
         setTitle("Calculadora");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -34,8 +35,8 @@ public class calcGUI extends JFrame implements ActionListener{
         botoes[11] = new JButton("-");
         botoes[12] = new JButton("*");
         botoes[13] = new JButton("/");
-        botoes[14] = new JButton("C");
-        botoes[15] = new JButton("=");
+        botoes[14] = new JButton("^");
+        botoes[15] = new JButton("√");
 
 
          // Adiciona os botões à grade
@@ -55,11 +56,6 @@ public class calcGUI extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         // Adicione o código para lidar com eventos de botão aqui
-    }
-
-    // Método principal
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new CalculadoraGUI());
     }
 }
 
